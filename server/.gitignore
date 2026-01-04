@@ -1,0 +1,27 @@
+# Dependencies
+/node_modules
+/package-lock.json
+/npm-shrinkwrap.json
+
+# Testing and Coverage
+/coverage
+/.nyc_output
+
+# Environment files and secrets
+.env
+.env.local
+
+# Logs and temporary files
+*.log
+*.gz
+*.swp
+.DS_Store # macOS specific
+npm-debug.log*
+
+# Build artifacts
+/dist
+/build
+
+# IDE/Editor-specific files (optional)
+.vscode/ # VS Code settings
+.idea/ # WebStorm/IntelliJ settings
