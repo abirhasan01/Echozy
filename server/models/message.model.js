@@ -21,9 +21,13 @@ const messageSchema = mongoose.Schema({
     seen: {
         type: Boolean,
         default: false
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now()
     }
 
-}, {timeStamps: true})
+},)
 
 const Message = mongoose.model("message", messageSchema)
 

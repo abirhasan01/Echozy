@@ -105,7 +105,7 @@ const updateProfile = async (req, res) => {
 
         let updatedUser
 
-        if(profilePic){
+        if(!profilePic){
             updatedUser = await User.findByIdAndUpdate(userId, {bio, fullName}, {new: true})
         } else {
             const upload = await cloudinary.uploader.upload(profilePic)
